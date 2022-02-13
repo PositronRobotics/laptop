@@ -16,8 +16,8 @@ while True:
 
 	mask = cv2.inRange(hsv, lower_blue, upper_blue)
 
-	result = cv2.bitwise_and(img, img, mask=mask)
+	#result = cv2.bitwise_and(img, img, mask=mask)
 	
-	cv2.imshow('test',result)
+	cv2.imshow('test',img)
 	if ord('q')==cv2.waitKey(10):
 		exit(0)
